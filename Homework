@@ -1,0 +1,89 @@
+package ru.geekbrains.guessthenumber;
+
+import java.util.Scanner;
+
+public class Main {
+    private static float Calc_it(int a,int b,int c,int d){ // метод для 1 задания
+        Scanner scanner = new Scanner(System.in);
+        float result = a*(b+(c/d));
+        return result;
+    }
+
+    private static int Check1(int one,int two){ // метод для 2 задания
+        Scanner scanner = new Scanner(System.in);
+        int res = one + two;
+        if (res <= 20 || res > 10) System.out.println("Сумма чисел равна " + res + " и лежит внутри диапазона");
+        else  System.out.println("Сумма чисел равна " + res + " и лежит вне диапазона");
+        return res;
+    }
+
+    private static int Check2(int number){ // метод для 3 задания
+        if (number < 0) System.out.println("Вы ввели отрицательное число");
+        else System.out.println("Вы ввели положительное число");
+        return number;
+    }
+
+    private static void Hey(String username){ // метод для 4 задания
+         System.out.println("Привет, " + username);
+    }
+
+    private static void Year_check(int year){ // метод для 5 задания
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0 ) System.out.println("Год високосный");
+        else if (year % 100 == 0) System.out.println("Год не високосный");
+        else System.out.println("Год не високосный");
+    }
+
+
+    public static void main(String[] args) {
+
+//        System.out.println("Задание 1. Давайте подсчитаем выражение a * (b + (c / d))");
+//        System.out.println("Введите а");
+//        int a = scanner.nextInt();
+//        System.out.println("Введите b");
+//        int b = scanner.nextInt();
+//        System.out.println("Введите c");
+//        int c = scanner.nextInt();
+//        System.out.println("Введите d");
+//        int d = scanner.nextInt();
+//        System.out.println("Результат работы программы " + Calc_it(a,b,c,d)); // конец 1 задания
+
+
+//        System.out.println("Задание 2. Проверим сумму случайных чисел"); // начало 2 задания
+//        int one = (int)(Math.random()*10);
+//        int two = (int)(Math.random()*10);
+//        System.out.println("Первое случайое число равно " + one);
+//        System.out.println("Второе случайое число равно " + two);
+//        Check1(one, two); // конец 2 задания
+
+//        Scanner scanner = new Scanner(System.in); // начало 3 задания
+//        System.out.println("Задание 3. Проверим, является ли введенное число положительным");
+//        System.out.println("Введите число");
+//        int number = scanner.nextInt();
+//        Check2(number); // конец 3 задания
+
+//        Scanner scanner = new Scanner(System.in); // начало 4 задания
+//        System.out.println("Программа для задания 4");
+//        System.out.println("Введите свое имя");
+//        String username = scanner.nextLine();
+//        Hey(username); // конец 4 задания
+
+//        System.out.println("Задание 5. Эта программа показывает, является ли год високосным"); // начало задания 5
+//        System.out.println("Введите год");
+//        Scanner scanner = new Scanner(System.in);
+//        int year = scanner.nextInt();
+//        Year_check(year); // конец задания 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
